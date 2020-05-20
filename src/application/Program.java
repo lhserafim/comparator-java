@@ -2,10 +2,7 @@ package application;
 
 import entities.Product;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Locale;
+import java.util.*;
 
 public class Program {
     public static void main(String args[]) {
@@ -19,8 +16,20 @@ public class Program {
         // Para poder utilizar Collections.sort é necessário implementar na classe Product
         // public class Product implements Comparable<T>{
         //Collections.sort(list);
-        // implementando com comparator
-        list.sort(new MyComparator());
+
+        // implementando com Comparator
+        //list.sort(new MyComparator());
+
+        // Declaração de Comparator utilizando a sintaxe de classe anonima
+        Comparator<Product> comp = new Comparator<Product>() {
+            // Dentro das chaves, fazer a implementação da classe anonima
+            @Override
+            public int compare(Product o1, Product o2) {
+                return o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
+             }
+        }; // Necessário colocar ;
+
+        list.sort(comp);
 
         for (Product p : list) {
             System.out.println(p);

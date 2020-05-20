@@ -18,7 +18,9 @@ public class Program {
 
         // Para poder utilizar Collections.sort é necessário implementar na classe Product
         // public class Product implements Comparable<T>{
-        Collections.sort(list);
+        //Collections.sort(list);
+        // implementando com comparator
+        list.sort(new MyComparator());
 
         for (Product p : list) {
             System.out.println(p);

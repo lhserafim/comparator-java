@@ -1,7 +1,9 @@
 package entities;
 
 
-public class Product implements Comparable<Product>{
+//public class Product implements Comparable<Product>{
+// implementação com Comparator
+public class Product {
     private String name;
     private Double price;
 
@@ -34,12 +36,12 @@ public class Product implements Comparable<Product>{
                 '}';
     }
 
-    // Método obrigatório p/ ser implementado.
+    // Método obrigatório p/ ser implementado com Comparable.
+    /*
     @Override
     public int compareTo(Product o) {
         return name.toUpperCase().compareTo(o.getName().toUpperCase());
     }
-
-
+     */
 
 }

@@ -1,15 +1,15 @@
 
-V	java:S125"<This block of commented-out lines of code should be removed.(„’Îûÿÿÿÿ
-Z	java:S106,"9Replace this use of System.out or System.err by a logger.(úõ–áùÿÿÿÿ8œÙ„“£.
-]	java:S125"<This block of commented-out lines of code should be removed.(±şğ ùÿÿÿÿ8äçÈ’£.
-X	java:S125"<This block of commented-out lines of code should be removed.(Î­µ“8âÿâ’£.
-U	java:S1061"9Replace this use of System.out or System.err by a logger.(ú•€Ë8Ãìş’£.
-u
-java:S1602&"SRemove useless curly braces around statement and then remove useless return keyword(ß¤“Ùıÿÿÿÿ8Õ¯ô’£.
-A
-java:S26760"Use the original value instead.(ÉçŒõÿÿÿÿÿ8ëü’£.
 Z	java:S106<"9Replace this use of System.out or System.err by a logger.(úõ–áùÿÿÿÿ8òî“£.
+U	java:S1068"9Replace this use of System.out or System.err by a logger.(ú•€Ë8×Ç‘“£.
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(úõ–áùÿÿÿÿ
+]	java:S125"<This block of commented-out lines of code should be removed.(±şğ ùÿÿÿÿ8äçÈ’£.
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(ú•€Ë8Ãìş’£.
+Z	java:S106,"9Replace this use of System.out or System.err by a logger.(úõ–áùÿÿÿÿ8œÙ„“£.
+V	java:S125"<This block of commented-out lines of code should be removed.(„’Îûÿÿÿÿ
+X	java:S125"<This block of commented-out lines of code should be removed.(Î­µ“8âÿâ’£.
 Z
 java:S1197"8Move the array designator from the variable to the type.(¡şÏÖøÿÿÿÿ8ùÈÈ‘£.
-S	java:S1065"9Replace this use of System.out or System.err by a logger.(úõ–áùÿÿÿÿ
-U	java:S1068"9Replace this use of System.out or System.err by a logger.(ú•€Ë8×Ç‘“£.
+A
+java:S26760"Use the original value instead.(ÉçŒõÿÿÿÿÿ8ëü’£.
+u
+java:S1602&"SRemove useless curly braces around statement and then remove useless return keyword(ß¤“Ùıÿÿÿÿ8Õ¯ô’£.

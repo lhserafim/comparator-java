@@ -53,6 +53,12 @@ public class Program {
             System.out.println(p);
         }
 
+        System.out.println("--------------------------");
+        list.sort((o1, o2) -> o1.getName().toUpperCase().compareTo(o2.getName()));
+
+        for (Product p : list) {
+            System.out.println(p);
+        }
 
     }
 }

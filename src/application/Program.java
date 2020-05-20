@@ -21,6 +21,7 @@ public class Program {
         //list.sort(new MyComparator());
 
         // Declaração de Comparator utilizando a sintaxe de classe anonima
+        /*
         Comparator<Product> comp = new Comparator<Product>() {
             // Dentro das chaves, fazer a implementação da classe anonima
             @Override
@@ -28,12 +29,30 @@ public class Program {
                 return o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
              }
         }; // Necessário colocar ;
+         */
 
+        // Fazendo com expressão lambida
+        // o1,o2 são parametros
+        // Arrow Funciont = flexinha -> é o que será executado
+        // Não precisa declarar o tipo das variáveis de parametro
+        Comparator<Product> comp = (o1,o2) -> {
+            return o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
+        };
         list.sort(comp);
 
         for (Product p : list) {
             System.out.println(p);
         }
+
+        // ainda posso melhorar e deixar mais enxuto (usei - para ficar decrescente)
+        Comparator<Product> comp2 = (o1,o2) -> -o1.getName().toUpperCase().compareTo(o2.getName().toUpperCase());
+        System.out.println("--------------------------");
+        list.sort(comp2);
+
+        for (Product p : list) {
+            System.out.println(p);
+        }
+
 
     }
 }
